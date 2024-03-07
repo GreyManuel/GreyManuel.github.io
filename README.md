@@ -1,49 +1,55 @@
-# Propose Site - A Fun Project
+# Valentine's Day Experiment 💖
+
+Love is in the air, and so is code! 💻
+
+
+<img width="647" alt="Valentines" src="https://github.com/dikshikaaa/Valentines-Day/assets/91119764/c0c7ec60-2059-4e25-951d-67a17adfab37">
+
 
 ## Description
 
-This repository contains a simple web application for proposing to your girlfriend. The project is implemented using basic HTML, CSS, and JavaScript. It's a fun and creative way to express your feelings and make a memorable proposal.
+This React application is a Valentine's Day experiment featuring a cute bear and an invitation to be your Valentine. 
 
-## Features
+Trust me when I say your crush won't say NO!
 
-- **Interactive Design:** The site has an interactive and user-friendly design, making it engaging for users.
-- **Customizable Message:** Users can customize the proposal message to make it more personal.
-- **Responsive:** The site is designed to be responsive, ensuring a consistent experience across different devices.
+It displays a playful question: "Will you be my Valentine?" accompanied by two response options: a "Yes" button and a "No" button. If the user tries to press "No," the button insists and cleverly avoids being clicked by saying changing no to a new response like "Are you sure" or"You're breaking my heart" and more, encouraging the user to eventually click "Yes." Upon agreeing, the webpage celebrates the acceptance with a cute GIF. Share some love and enjoy the animations!
 
-## Usage
+## Contributions
+Contributions to improve the project are welcome. Please follow these steps to contribute:
 
-To use the Propose Site, follow these steps:
+Fork the repository.
+- Create a new branch for your feature (git checkout -b feature/SomethingNew).
+- Commit your changes (git commit -m 'Add some SomethingNew').
+- Push to the branch (git push origin feature/SomethingNew).
+- Open a Pull Request.
 
-1. Clone the repository:
+### React + TypeScript + Vite
 
-   ```bash
-   git clone https://github.com/kamrullab/propose.git
-   ```
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-2. Open the `index.html` file in a web browser.
+Currently, two official plugins are available:
 
-3. Customize the proposal message by clicking on the "Customize" button.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-4. Enter your personalized message and click "Save."
+## Expanding the ESLint configuration
 
-5. After customizing the message, click on the "Propose" button to reveal the proposal.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-6. Share the link with your girlfriend and surprise her with your creative proposal!
+- Configure the top-level `parserOptions` property like this:
 
-## Contribution
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
+    tsconfigRootDir: __dirname,
+  },
+};
+```
 
-If you have ideas for improvement or additional features, feel free to contribute. You can fork the repository, make changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Disclaimer
-
-This project is intended for entertainment purposes only. Use it responsibly and consider the preferences and feelings of the person you are proposing to.
-
-## Author
-
-- [ELITE KAMRUL](https://github.com/kamrullab)
-
-Feel free to reach out for any questions or feedback! Happy proposing! 🎉
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
