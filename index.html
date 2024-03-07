@@ -1,122 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HAPPY VALENTINE'S DAY TANIYA</title>
-<link rel="icon" type="image/png" sizes="100%" href="https://pngtree.com/so/valentines-day">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #ffe6e6; /* Light pink background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose</title>
+   <!-- <meta name="description" content="My feelings for you in my life have only grown stronger since the day we first met. I want to seal our bond forever & today! I LOVE YOU!"> -->
+    <meta name="description" content=" You are the only one who understands me even more than myself. You are the only one with whom I can share everything, even my secrets. I want you to be with me always.! I LOVE YOU!">
+    <!-- Open Graph Image Meta Tag -->
+    <meta property="og:image" content="https://static.toiimg.com/thumb/msid-74004000,imgsize-511880,width-400,resizemode-4/74004000.jpg">
+    <link rel="shortcut icon" type="image/png" href="https://github.com/images/modules/search/mona-love.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  .container {
-    text-align: center;
-    max-width: 600px;
-    padding: 30px;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Added shadow */
-  }
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-  h1 {
-    font-size: 36px;
-    color: #ff3399; /* Rose pink */
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
-  }
+        body {
+            background: linear-gradient(117deg, #ff41f7 0%, rgba(255, 73, 73, 0.81) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-  p {
-    font-size: 20px; /* Increased font size */
-    color: #660033; /* Dark pink text */
-    margin-bottom: 30px;
-    font-family: 'Segoe Script', cursive; /* Romantic font */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
-  }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 72px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
 
-  .gif-container {
-    width: 80%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Added shadow */
-    margin: 0 auto; /* Center the gif */
-    margin-bottom: 30px;
-  }
+        .btn {
+            color: gray;
+            background-color: white;
+            border: none;
+            border-radius: 50px;
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            font-weight: bold;
+        }
 
-  img {
-    width: 100%;
-    border-radius: 10px;
-  }
+        .btn:hover {
+            background-color: #ff4690;
+            border: 2px solid white;
+        }
 
-  button {
-    padding: 12px 24px;
-    font-size: 18px;
-    border: 2px solid #ff99cc; /* Light pink border */
-    border-radius: 25px;
-    cursor: pointer;
-    margin: 10px;
-    transition: all 0.3s ease;
-    outline: none;
-    background-color: #ff3399; /* Rose pink */
-    color: #fff;
-  }
+        @media (max-width: 1148px) {
+            h1 {
+                font-size: 50px;
+            }
+            .btn {
+                width: 150px;
+                height: 40px;
+            }
+        }
 
-  button:hover {
-    background-color: #e6005c; /* Lighter shade of pink */
-    border-color: #e6005c; /* Lighter shade of pink border on hover */
-    transform: scale(1.1);
-  }
+        @media (max-width: 795px) {
+            h1 {
+                font-size: 40px;
+            }
+        }
 
-  button:focus {
-    box-shadow: 0 0 0 3px #ff66b3; /* Pink outline when focused */
-  }
+        #showMessage {
+            display: none;
+        }
 
-  .shake {
-    animation: shake 0.5s ease-in-out;
-  }
+        #showMessage h1 {
+            font-size: 50px;
+        }
 
-  @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
-  }
-</style>
+        /* Animate Text */
+        .ml6 {
+            position: relative;
+        }
+
+        .ml6 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+
+        .ml6 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        /* Footer */
+        footer {
+            color: #fff;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <h1>Hey TANIYA!</h1>
-  <p>TANIYA I was thinking,if you and me... I mean, if you're free on this Valentine's, will you be my Valentine?</p>
-  <div class="gif-container">
-    <img src="https://media3.giphy.com/media/ZP7zODs282XveerKMI/giphy.gif?cid=6c09b952lag8kkpz3k714tmh2wz5mck1sxegjd7mivscmr2e&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Valentine's Day Image">
-  </div>
-  <button id="yesButton" onclick="playSong()">Yes, I'd love to!</button>
-  <button id="noButton" onclick="noClicked()">NO!</button>
-</div>
+    <div id="parentElement">
+        <div class="d-flex justify-content-center">
+            <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_mywfoph1.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+        <h1> Will you be Mine?🥰 </h1>
+        <div class="d-flex justify-content-center">
+            <button onclick="propose()" class="btn btn-primary">Yes!</button> <br>
+            <button onclick="propose()" class="btn btn-primary">Of Course, Yes!</button>
+        </div>
+    </div>
 
-<script>
-  function playSong() {
-    var mp3Url = 'https://github.com/Raw9k-ai/Happy-Valentine-s-day-/raw/main/Video%20by%20jivan_edit%20%5BC2KQghTvZPM%5D.m4a';
-    var audio = new Audio(mp3Url);
-    audio.play();
-    alert("I love you TANIYA! ❤️");
-  }
+    <div id="showMessage" class="position-absolute top-50 start-50 translate-middle">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_utsfwa3k.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <h1 class="ml6">
+            <span class="text-wrapper">
+                <span class="letters">I Love you!</span>
+            </span>
+        </h1>
+    </div>
 
-  function noClicked() {
-    alert("Think again TANIYA.");
-    document.getElementById('noButton').classList.add('shake');
-    setTimeout(function() {
-      document.getElementById('noButton').classList.remove('shake');
-    }, 500);
-  }
-</script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        const parentElement = document.getElementById("parentElement");
+        const showMessage = document.getElementById("showMessage");
+        const changeColor = document.body.style;
+
+        const propose = () => {
+            parentElement.style.display = "none";
+            showMessage.style.display = "block";
+            changeColor.background = "linear-gradient(116.82deg, #ff94e7 0%, #27cbff 100%)";
+        };
+
+        // Animate Text with Anim JS
+        var textWrapper = document.querySelector(".ml6 .letters");
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: ".ml6 .letter",
+                translateY: ["1.1em", 0],
+                translateZ: 0,
+                duration: 750,
+                delay: (el, i) => 50 * i,
+            })
+            .add({
+                targets: ".ml6",
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000,
+            });
+    </script>
 </body>
 </html>
